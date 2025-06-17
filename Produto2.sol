@@ -16,27 +16,27 @@ contract Produto {
     }
     
     function setNome(string memory _nome) public {
-        require(msg.sender == dono, "Você não está autorizado.");
+        require(msg.sender == dono, "Voce nao esta autorizado.");
         nome = _nome;
     }
 
     function setDescricao(string memory _descricao) public {
-        require(msg.sender == dono, "Você não está autorizado.");
+        require(msg.sender == dono, "Voce nao esta autorizado.");
         descricao = _descricao;
     }
 
     function setQuantidade(uint256 _quantidade) public {
-        require(msg.sender == dono, "Você não está autorizado.");
+        require(msg.sender == dono, "Voce nao esta autorizado.");
         quantidade = _quantidade;
     }
 
     function setPreco(uint256 _preco) public {
-        require(msg.sender == dono, "Você não está autorizado.");
+        require(msg.sender == dono, "Voce nao esta autorizado.");
         preco = _preco;
     }
 
     function transferirPropriedade(address novoDono) public {
-        require(msg.sender == dono, "Você não está autorizado.");
+        require(msg.sender == dono, "Voce nao esta autorizado.");
         dono = novoDono;
     }
 }

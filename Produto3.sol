@@ -17,7 +17,7 @@ contract Produto {
     }    
 
     modifier somenteDono() {
-        require(msg.sender == dono, "Você não está autorizado.");
+        require(msg.sender == dono, "Voce nao esta autorizado.");
         _;
     }
     
